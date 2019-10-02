@@ -1,8 +1,8 @@
-/*	Author: dfeng007
- *  Partner(s) Name: Hao Wu
- *	Lab Section:
- *	Assignment: Lab #  Exercise #
- *	Exercise Description: [optional - include for your own benefit]
+/*	Author: Yuhang Xing
+ *      Partner(s) Name: Hao Wu
+ *	Lab Section:Lab 2
+ *	Assignment: Lab #  Exercise 1 #
+ *	Exercise Description: [light control]
  *
  *	I acknowledge all content contained herein, excluding template or example
  *	code, is my own original work.
@@ -19,17 +19,16 @@ int main(void) {
 	unsigned char tmpA = 0x00;
 	unsigned char tmpB = 0x00; 
 while(1) {
-  PORTB=0x00;
-		// 1) Read input
-		tmpA = PINA;
-
-		if (tmpA == 0x01) { // True if PA0 is 1
-		  tmpB =0x01;
-		  PORTB=tmpB;
-		}   
+                 PORTB=0x00;
+	         tmpA = PINA;
+		 if (tmpA == 0x01)
+		   {
+		     tmpB =0x01;
+		     PORTB=tmpB;
+		   }   
 	       
         
- }
+         }
 	return 0;
 }
 
